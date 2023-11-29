@@ -10,7 +10,7 @@ function getPromise () {
 }
 
 getPromise()
-.then((data) => {
+.then(<T extends Array<string>>(data: T) => {
   console.log(data);
 });
 

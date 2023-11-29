@@ -1,16 +1,17 @@
 /*
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
+class Component<TProps> {
+  constructor (public props: TProps) {}
 
-class Component {
-  constructor (public props:T) {
-
+  getTitle(): TProps {
+    return this.props
   }
 }
 
 class Page extends Component {
   pageInfo () {
-    console.log(this.props.title);
+    console.log(this.props);
   }
 }
 
