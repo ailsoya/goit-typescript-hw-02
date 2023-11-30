@@ -15,10 +15,6 @@ enum Days {
 
 let Day: Days = Days.Wednesday
 
-function isWeekend(Day: number): boolean {
-  if(Day >= 0 && Day<=4) {
-    return false
-  } else {
-    return true
-  }
+function isWeekend(day: Days): boolean {
+  return day === Days.Saturday || day === Days.Sunday
 }
